@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giới thiệu Hưng Thịnh VN30F | Tổng hợp thông tin chứng khoán phái sinh Việt Nam</title>
+<meta name="description" content="Hưng Thịnh VN30F là trang web tổng hợp thông tin giao dịch chứng khoán phái sinh tại Việt Nam, giúp nhà đầu tư tìm hiểu thị trường phái sinh VN30 và kết nối ứng dụng mở tài khoản giao dịch.">
+<meta name="theme-color" content="#7635c4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237635c4'/%3E%3Cpath d='M16 68 36 46l16 12 32-34' fill='none' stroke='white' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tim:#7635c4; --tim-dam:#3b1670; --tim-sau:#5a24a0; --tim-lav:#b99af0;
+  --tim-nhat:#efe6fb; --tim-hong:#c04fd6; --chu:#2a2140; --phu:#5d5473; --vien:#e3d8f5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"Be Vietnam Pro",system-ui,"Segoe UI",Roboto,sans-serif;color:var(--chu);background:#fff;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--tim)}
+:focus-visible{outline:3px solid var(--tim-hong);outline-offset:3px;border-radius:6px}
+.khung{max-width:1100px;margin:0 auto;padding:0 24px}
+.vung{padding:80px 0}
+.nen{background:var(--tim-nhat)}
+h1,h2,h3{font-family:"Be Vietnam Pro",system-ui,"Segoe UI",Roboto,sans-serif;color:var(--tim-dam);line-height:1.25;font-weight:800;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,5vw,3.6rem)}
+h2{font-size:clamp(1.65rem,3.3vw,2.3rem);margin-bottom:14px}
+h3{font-size:1.3rem;color:var(--tim);margin-bottom:8px;font-weight:700}
+h4{font-size:1rem;font-weight:700;color:var(--tim-dam);margin-bottom:4px}
+p{color:var(--phu);max-width:66ch}
+.dan{margin-bottom:36px}
+
+.nut{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--tim);background:var(--tim);color:#fff;transition:background .2s}
+.nut:hover{background:var(--tim-sau);border-color:var(--tim-sau)}
+.nut.vien{background:#fff;color:var(--tim)}
+.nut.vien:hover{background:var(--tim-nhat)}
+.nut.trang{background:#fff;color:var(--tim-dam);border-color:#fff}
+
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--vien)}
+header .khung{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;color:var(--tim-dam)}
+.logo svg{width:34px;height:34px}
+.logo b{color:var(--tim)}
+nav ul{display:flex;gap:24px;list-style:none;align-items:center}
+nav a{text-decoration:none;color:var(--chu);font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--tim)}
+nav .nut{padding:9px 18px;color:#fff;font-size:.92rem}
+
+.hero{padding:76px 0 84px;background:radial-gradient(800px 380px at 92% -10%,var(--tim-nhat),transparent 70%),#fff}
+.hero .khung{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero p.mo{font-size:1.15rem;margin:20px 0 30px}
+.nhom{display:flex;gap:14px;flex-wrap:wrap}
+.the-tk{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.the-tk span{background:var(--tim-nhat);color:var(--tim-sau);padding:5px 14px;border-radius:999px;font-size:.86rem;font-weight:600}
+.bang{background:linear-gradient(160deg,var(--tim-dam),var(--tim));color:#fff;border-radius:28px;padding:26px;box-shadow:0 28px 56px -28px rgba(118,53,196,.7)}
+.bang .tren{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.bang strong{font-size:1.25rem}
+.bang small{color:var(--tim-lav)}
+.bang svg{width:100%;height:auto;display:block}
+.bang .duong{stroke-dasharray:900;stroke-dashoffset:900;animation:ve 2.2s .3s ease-out forwards}
+@keyframes ve{to{stroke-dashoffset:0}}
+
+.hai{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.hai p{margin-bottom:14px}
+.gt{display:grid;gap:14px}
+.gt div{background:#fff;border-left:5px solid var(--tim);border-radius:0 14px 14px 0;padding:16px 20px}
+.gt div:nth-child(2){border-color:var(--tim-hong)}
+.gt div:nth-child(3){border-color:var(--tim-lav)}
+.gt p{font-size:.96rem;margin:0}
+
+.luoi{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.the{background:#fff;border:1px solid var(--vien);border-radius:20px;padding:28px}
+.nen .the{border-color:transparent}
+.the .ic{width:46px;height:46px;border-radius:14px;background:var(--tim);display:grid;place-items:center;margin-bottom:14px}
+.the .ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.the p{font-size:.97rem}
+
+.buoc{list-style:none;counter-reset:b;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.buoc li{counter-increment:b;position:relative;padding-top:62px}
+.buoc li::before{content:counter(b);position:absolute;top:0;left:0;width:46px;height:46px;border-radius:50%;background:var(--tim);color:#fff;font-weight:800;display:grid;place-items:center;font-size:1.15rem}
+.buoc li::after{content:"";position:absolute;top:22px;left:58px;right:-14px;height:2px;background:var(--tim-lav)}
+.buoc li:last-child::after{display:none}
+.buoc p{font-size:.95rem}
+
+.cta{background:linear-gradient(135deg,var(--tim-dam),var(--tim) 70%,var(--tim-hong) 135%);border-radius:30px;padding:56px 46px;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}
+.cta h2{color:#fff}
+.cta p{color:#eadcff}
+.cta .nhom{justify-content:flex-end}
+
+.luu-y{background:var(--tim-nhat);border-left:6px solid var(--tim-hong);border-radius:16px;padding:22px 26px}
+.luu-y p{max-width:none;color:var(--chu);font-size:.95rem}
+
+footer{background:var(--tim-dam);color:#d9c8f5;padding:48px 0 26px;margin-top:20px}
+footer h2{font-family:"Be Vietnam Pro",sans-serif;font-size:1.1rem;color:#fff;margin-bottom:10px}
+footer p{color:#d9c8f5;font-size:.94rem}
+footer .cot{display:grid;grid-template-columns:1.5fr 1fr;gap:36px}
+footer ul{list-style:none}
+footer li{margin-bottom:8px;font-size:.94rem}
+footer a{color:#d9c8f5;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .bq{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:18px;font-size:.84rem;color:var(--tim-lav)}
+
+@media (max-width:900px){
+  .hero .khung,.hai,.cta,footer .cot{grid-template-columns:1fr}
+  .luoi{grid-template-columns:1fr}
+  .buoc{grid-template-columns:1fr 1fr}
+  .buoc li::after{display:none}
+  .cta{padding:40px 26px}
+  .cta .nhom{justify-content:flex-start}
+  nav li:not(:last-child){display:none}
+  .vung{padding:56px 0}
+}
+@media (max-width:520px){.buoc{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bang .duong{animation:none;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="khung">
+    <a class="logo" href="#top" aria-label="Hưng Thịnh VN30F - đầu trang">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#7635c4"/><path d="M16 68 36 46l16 12 32-34" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Hưng Thịnh <b>VN30F</b></span>
+    </a>
+    <nav aria-label="Điều hướng">
+      <ul>
+        <li><a href="#ve-chung-toi">Về chúng tôi</a></li>
+        <li><a href="#linh-vuc">Nội dung</a></li>
+        <li><a href="#ket-noi">Kết nối mở tài khoản</a></li>
+        <li><a href="#gia-tri">Giá trị</a></li>
+        <li><a class="nut" href="https://hovica.io.vn/san-pham-dich-vu/" target="_blank" rel="noopener">Mở tài khoản</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="h1">
+    <div class="khung">
+      <div>
+        <h1 id="h1">Giới thiệu Hưng Thịnh VN30F: nơi tổng hợp thông tin giao dịch chứng khoán phái sinh Việt Nam</h1>
+        <p class="mo">Hưng Thịnh VN30F là nguồn cảm hứng và kiến thức để các nhà đầu tư tìm hiểu, làm quen và tham gia thị trường chứng khoán phái sinh VN30 một cách tự tin, có chuẩn bị.</p>
+        <div class="nhom">
+          <a class="nut" href="#ve-chung-toi">Tìm hiểu về chúng tôi</a>
+          <a class="nut vien" href="#ket-noi">Cách kết nối mở tài khoản</a>
+        </div>
+        <div class="the-tk">
+          <span>Chứng khoán phái sinh</span><span>HĐTL VN30</span><span>VN30F</span>
+        </div>
+      </div>
+      <div class="bang" role="img" aria-label="Biểu đồ đường minh họa, không phải số liệu thực">
+        <div class="tren"><strong>VN30F</strong><small>Hình minh họa</small></div>
+        <svg viewBox="0 0 400 220" aria-hidden="true">
+          <g stroke="#fff" stroke-opacity=".13"><line x1="0" y1="45" x2="400" y2="45"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="155" x2="400" y2="155"/><line x1="0" y1="205" x2="400" y2="205"/></g>
+          <path class="duong" d="M0 170 L40 152 L75 162 L115 118 L150 134 L190 86 L230 106 L270 62 L310 80 L350 38 L400 52" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="350" cy="38" r="7" fill="#c04fd6" stroke="#fff" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="vung nen" id="ve-chung-toi" aria-labelledby="h2a">
+    <div class="khung hai">
+      <div>
+        <h2 id="h2a">Hưng Thịnh VN30F là ai?</h2>
+        <p><strong>Hưng Thịnh VN30F</strong> là trang web tổng hợp thông tin về giao dịch chứng khoán phái sinh tại Việt Nam, tập trung vào hợp đồng tương lai chỉ số VN30 (HĐTL VN30).</p>
+        <p>Chúng tôi muốn trở thành nguồn cảm hứng để nhà đầu tư tìm hiểu bài bản trước khi bước vào thị trường: hiểu sản phẩm, hiểu cơ chế, hiểu rủi ro rồi mới quyết định.</p>
+        <h3>Sứ mệnh</h3>
+        <p>Đem kiến thức phái sinh đến gần hơn với nhà đầu tư Việt Nam bằng ngôn ngữ rõ ràng, dễ tiếp cận và luôn nhắc đến rủi ro.</p>
+        <h3>Tầm nhìn</h3>
+        <p>Trở thành địa chỉ thông tin phái sinh VN30 đáng tin cậy, nơi người mới bắt đầu và nhà đầu tư có kinh nghiệm đều tìm được điều cần biết.</p>
+      </div>
+      <div class="gt">
+        <div><h4>Tổng hợp thông tin</h4><p>Gom kiến thức và thông tin giao dịch phái sinh về một nơi, dễ tra cứu.</p></div>
+        <div><h4>Truyền cảm hứng tìm hiểu</h4><p>Khuyến khích nhà đầu tư học trước, giao dịch sau.</p></div>
+        <div><h4>Kết nối khi sẵn sàng</h4><p>Hỗ trợ kết nối đến ứng dụng mở tài khoản khi bạn có nhu cầu giao dịch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vung" id="linh-vuc" aria-labelledby="h2b">
+    <div class="khung">
+      <h2 id="h2b">Chúng tôi cung cấp những gì?</h2>
+      <p class="dan">Ba nhóm nội dung chính giúp bạn tiếp cận thị trường phái sinh VN30 có hệ thống.</p>
+      <div class="luoi">
+        <article class="the">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Thông tin thị trường</h3>
+          <h4>Hiểu HĐTL VN30</h4>
+          <p>Khái niệm, đặc điểm hợp đồng, ký quỹ, đáo hạn và cách tính lãi lỗ trên chứng khoán phái sinh.</p>
+        </article>
+        <article class="the">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <h3>Hướng dẫn tham gia</h3>
+          <h4>Từng bước rõ ràng</h4>
+          <p>Điều kiện, quy trình và những điều cần chuẩn bị trước khi giao dịch phái sinh.</p>
+        </article>
+        <article class="the">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Nhắc nhở rủi ro</h3>
+          <h4>Giao dịch thận trọng</h4>
+          <p>Đòn bẩy, gọi ký quỹ, cắt lỗ và quản lý vốn: những điều nên hiểu trước khi vào lệnh.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="vung nen" id="ket-noi" aria-labelledby="h2c">
+    <div class="khung">
+      <h2 id="h2c">Kết nối ứng dụng mở tài khoản giao dịch</h2>
+      <p class="dan">Khi bạn đã hiểu thị trường và có nhu cầu tham gia giao dịch, Hưng Thịnh sẽ kết nối bạn đến ứng dụng mở tài khoản. Ứng dụng này có thương hiệu riêng, là đơn vị thực hiện việc mở tài khoản và giao dịch.</p>
+      <ol class="buoc">
+        <li><h3>Tìm hiểu</h3><p>Đọc kiến thức về phái sinh VN30 và cân nhắc rủi ro.</p></li>
+        <li><h3>Liên hệ kết nối</h3><p>Chọn mở tài khoản, Hưng Thịnh dẫn bạn đến ứng dụng.</p></li>
+        <li><h3>Mở tài khoản</h3><p>Hoàn tất thủ tục trực tuyến trên ứng dụng có thương hiệu riêng.</p></li>
+        <li><h3>Giao dịch</h3><p>Nạp ký quỹ theo yêu cầu và bắt đầu giao dịch HĐTL VN30.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="vung" id="gia-tri" aria-labelledby="h2d">
+    <div class="khung">
+      <h2 id="h2d">Giá trị Hưng Thịnh VN30F theo đuổi</h2>
+      <div class="luoi" style="margin-top:28px">
+        <article class="the">
+          <h3>Minh bạch</h3>
+          <h4>Nói rõ vai trò</h4>
+          <p>Hưng Thịnh là kênh thông tin và kết nối, không thay thế đơn vị cung cấp dịch vụ giao dịch.</p>
+        </article>
+        <article class="the">
+          <h3>Dễ hiểu</h3>
+          <h4>Ngôn ngữ gần gũi</h4>
+          <p>Giải thích thuật ngữ phái sinh đơn giản, phù hợp cả người mới.</p>
+        </article>
+        <article class="the">
+          <h3>Thận trọng</h3>
+          <h4>Rủi ro đi cùng cơ hội</h4>
+          <p>Luôn nhắc rằng giao dịch phái sinh có đòn bẩy và có thể gây thua lỗ.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom:56px" id="mo-tai-khoan" aria-labelledby="h2e">
+    <div class="khung">
+      <div class="cta">
+        <div>
+          <h2 id="h2e">Bạn muốn tham gia giao dịch phái sinh VN30?</h2>
+          <p>Hưng Thịnh sẽ kết nối bạn đến ứng dụng mở tài khoản. Hãy đọc kỹ điều khoản và cảnh báo rủi ro trước khi đăng ký.</p>
+        </div>
+        <div class="nhom">
+          <a class="nut trang" href="https://hovica.io.vn/san-pham-dich-vu/" target="_blank" rel="noopener">Mở tài khoản ngay</a>
+        </div>
+      </div>
+      <div class="luu-y" style="margin-top:28px" role="note">
+        <h4>Cảnh báo rủi ro</h4>
+        <p>Giao dịch chứng khoán phái sinh có đòn bẩy và có thể gây thua lỗ vượt số vốn ký quỹ ban đầu. Nội dung trên trang chỉ nhằm cung cấp thông tin, không phải lời khuyên đầu tư hay cam kết lợi nhuận.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="khung">
+    <div class="cot">
+      <div>
+        <h2>Hưng Thịnh VN30F</h2>
+        <p>Trang tổng hợp thông tin giao dịch chứng khoán phái sinh Việt Nam, kết nối nhà đầu tư đến ứng dụng mở tài khoản giao dịch.</p>
+      </div>
+      <nav aria-label="Liên kết chân trang">
+        <ul>
+          <li><a href="#ve-chung-toi">Về chúng tôi</a></li>
+          <li><a href="#linh-vuc">Nội dung cung cấp</a></li>
+          <li><a href="#ket-noi">Kết nối mở tài khoản</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bq">© 2026 Hưng Thịnh VN30F. Giao dịch phái sinh tiềm ẩn rủi ro cao, vui lòng cân nhắc kỹ trước khi tham gia.</div>
+  </div>
+</footer>
+
+</body>
+</html>
