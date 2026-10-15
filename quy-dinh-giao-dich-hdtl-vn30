@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quy định giao dịch HĐTL VN30: Giờ giao dịch, ký quỹ, đáo hạn</title>
+<meta name="description" content="Tổng hợp quy định giao dịch HĐTL VN30: thông số hợp đồng, giờ giao dịch, biên độ giá, giới hạn vị thế, ký quỹ, đáo hạn. Không khuyến nghị đầu tư.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hungthinhvn30f.github.io/quy-dinh-giao-dich-hdtl-vn30.html">
+<meta property="og:title" content="Quy định giao dịch HĐTL VN30: Giờ giao dịch, ký quỹ, đáo hạn">
+<meta property="og:description" content="Những quy định chính khi giao dịch hợp đồng tương lai chỉ số VN30 tại Việt Nam.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hungthinhvn30f.github.io/quy-dinh-giao-dich-hdtl-vn30.html">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#7635c4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237635c4'/%3E%3Cpath d='M16 68 36 46l16 12 32-34' fill='none' stroke='white' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Quy định giao dịch HĐTL VN30: những điều nhà đầu tư cần biết",
+  "description":"Tổng hợp quy định giao dịch HĐTL VN30: thông số hợp đồng, giờ giao dịch, biên độ giá, giới hạn vị thế, ký quỹ và đáo hạn.",
+  "inLanguage":"vi",
+  "datePublished":"2026-10-15",
+  "dateModified":"2026-10-15",
+  "author":{"@type":"Organization","name":"Hưng Thịnh VN30F"},
+  "publisher":{"@type":"Organization","name":"Hưng Thịnh VN30F"},
+  "mainEntityOfPage":"https://hungthinhvn30f.github.io/quy-dinh-giao-dich-hdtl-vn30.html"
+}
+</script>
+<style>
+:root{--tim:#7635c4;--tim-dam:#3b1670;--tim-sau:#5a24a0;--tim-lav:#b99af0;--tim-nhat:#efe6fb;--tim-hong:#c04fd6;--chu:#2a2140;--phu:#4d4465;--vien:#e3d8f5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Be Vietnam Pro",system-ui,"Segoe UI",Roboto,sans-serif;color:var(--chu);background:#fff;line-height:1.8;font-size:17.5px;-webkit-font-smoothing:antialiased}
+a{color:var(--tim)}
+:focus-visible{outline:3px solid var(--tim-hong);outline-offset:3px;border-radius:6px}
+.khung{max-width:1000px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--vien);background:#fff;position:sticky;top:0;z-index:5}
+header .khung{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;color:var(--tim-dam)}
+.logo svg{width:32px;height:32px}
+.logo b{color:var(--tim)}
+nav ul{display:flex;gap:22px;list-style:none;align-items:center}
+nav a{text-decoration:none;color:var(--chu);font-weight:500;font-size:.94rem}
+nav a:hover{color:var(--tim)}
+nav .nut{background:var(--tim);color:#fff;padding:9px 18px;border-radius:999px;font-weight:700}
+nav .nut:hover{background:var(--tim-sau);color:#fff}
+
+.bai{max-width:780px;margin:0 auto;padding:44px 24px 20px}
+.duong-dan{font-size:.88rem;color:var(--phu);margin-bottom:18px}
+.duong-dan a{text-decoration:none}
+h1,h2,h3{font-family:inherit;color:var(--tim-dam);line-height:1.3;letter-spacing:-.01em}
+h1{font-size:clamp(1.9rem,4.4vw,2.75rem);font-weight:800;margin-bottom:14px}
+h2{font-size:clamp(1.45rem,3vw,1.85rem);font-weight:800;margin:48px 0 14px;padding-top:6px}
+h3{font-size:1.2rem;font-weight:700;color:var(--tim);margin:28px 0 8px}
+h4{font-size:1.02rem;font-weight:700;color:var(--tim-dam);margin:20px 0 6px}
+p{color:var(--phu);margin-bottom:14px}
+.meta{font-size:.9rem;color:var(--phu);margin-bottom:26px}
+.tom-tat{background:var(--tim-nhat);border-left:6px solid var(--tim);border-radius:0 16px 16px 0;padding:20px 24px;margin:6px 0 10px}
+.tom-tat p{color:var(--chu);margin:0}
+.cuon{overflow-x:auto;border:1px solid var(--vien);border-radius:16px;margin:16px 0 8px}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--vien);font-size:.96rem}
+thead th{background:var(--tim);color:#fff}
+tbody th{background:var(--tim-nhat);color:var(--tim-dam);width:38%}
+td{color:var(--phu)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+ul.ds{margin:0 0 14px 22px;color:var(--phu)}
+ul.ds li{margin-bottom:6px}
+.luu-y{background:#fff;border:1px solid var(--tim-lav);border-left:6px solid var(--tim-hong);border-radius:14px;padding:18px 22px;margin:34px 0 10px}
+.luu-y p{margin:0;font-size:.95rem;color:var(--chu)}
+footer{background:var(--tim-dam);color:#d9c8f5;padding:36px 0 22px;margin-top:40px;font-size:.92rem}
+footer a{color:#d9c8f5}
+footer .khung{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media (max-width:760px){nav li:not(:last-child){display:none}body{font-size:16.5px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="khung">
+    <a class="logo" href="index.html" aria-label="Hưng Thịnh VN30F - về trang chủ">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#7635c4"/><path d="M16 68 36 46l16 12 32-34" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Hưng Thịnh <b>VN30F</b></span>
+    </a>
+    <nav aria-label="Điều hướng">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a class="nut" href="https://hovica.io.vn/san-pham-dich-vu/" target="_blank" rel="noopener">Mở tài khoản</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<article class="bai">
+
+  <p class="duong-dan"><a href="index.html">Trang chủ</a> › Kiến thức phái sinh › Quy định giao dịch HĐTL VN30</p>
+
+  <h1>Quy định giao dịch HĐTL VN30: những điều nhà đầu tư cần biết</h1>
+  <p class="meta">Cập nhật ngày 15/10/2026 · Thời gian đọc khoảng 5 phút</p>
+
+  <div class="tom-tat">
+    <p>Hợp đồng tương lai chỉ số VN30 (HĐTL VN30) là sản phẩm chứng khoán phái sinh đang giao dịch tại Việt Nam. Bài viết tổng hợp các quy định chính về hợp đồng, giờ giao dịch, giới hạn, ký quỹ và đáo hạn. Nội dung chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</p>
+  </div>
+
+  <h2>Thông số cơ bản của HĐTL VN30</h2>
+  <p>HĐTL VN30 là thoả thuận mua hoặc bán chỉ số VN30 tại một mức giá xác định, thực hiện vào ngày trong tương lai. Hợp đồng thanh toán bằng tiền. Hai bên không giao nhận cổ phiếu.</p>
+
+  <div class="cuon">
+    <table>
+      <thead><tr><th scope="col">Nội dung</th><th scope="col">Quy định</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Tài sản cơ sở</th><td>Chỉ số VN30</td></tr>
+        <tr><th scope="row">Hệ số nhân</th><td>100.000 đồng/điểm</td></tr>
+        <tr><th scope="row">Bước giá</th><td>0,1 điểm</td></tr>
+        <tr><th scope="row">Đơn vị giao dịch</th><td>1 hợp đồng</td></tr>
+        <tr><th scope="row">Biên độ giá</th><td>±7% so với giá tham chiếu</td></tr>
+        <tr><th scope="row">Giới hạn lệnh</th><td>500 hợp đồng/lệnh</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Hệ số nhân và giá trị hợp đồng</h3>
+  <p>Quy mô một hợp đồng bằng điểm chỉ số nhân với 100.000 đồng. Ví dụ, khi chỉ số ở mức 1.500 điểm, giá trị một hợp đồng là 150 triệu đồng. Mỗi bước giá 0,1 điểm tương ứng 10.000 đồng cho một hợp đồng.</p>
+
+  <h2>Thời gian và phương thức giao dịch</h2>
+  <h3>Ngày và giờ giao dịch</h3>
+  <p>Thị trường giao dịch từ thứ Hai đến thứ Sáu, trừ ngày nghỉ lễ theo quy định. Một ngày giao dịch thường gồm ba giai đoạn:</p>
+  <ul class="ds">
+    <li>Khớp lệnh định kỳ mở cửa (ATO) vào đầu phiên.</li>
+    <li>Khớp lệnh liên tục trong phần lớn thời gian còn lại.</li>
+    <li>Khớp lệnh định kỳ đóng cửa (ATC) vào cuối phiên.</li>
+  </ul>
+  <p>Khung giờ cụ thể có thể được HNX điều chỉnh. Nhà đầu tư nên đối chiếu thông báo mới nhất.</p>
+
+  <h3>Phương thức khớp lệnh và thoả thuận</h3>
+  <p>Thị trường có hai phương thức: khớp lệnh và thoả thuận. Phần lớn giao dịch hằng ngày diễn ra theo phương thức khớp lệnh.</p>
+
+  <h3>Sửa và huỷ lệnh</h3>
+  <p>Lệnh giới hạn được sửa giá, sửa khối lượng hoặc huỷ trong giờ giao dịch.</p>
+  <h4>Những điểm cần nhớ</h4>
+  <ul class="ds">
+    <li>Không sửa đồng thời giá và khối lượng trên cùng một lệnh.</li>
+    <li>Nếu chỉ giảm khối lượng, thứ tự ưu tiên của lệnh giữ nguyên.</li>
+    <li>Nếu tăng khối lượng hoặc đổi giá, lệnh được xếp lại thứ tự ưu tiên.</li>
+  </ul>
+
+  <h2>Các giới hạn khi giao dịch</h2>
+  <h3>Biên độ dao động giá</h3>
+  <p>Giá trong ngày chỉ được dao động trong khoảng ±7% so với giá tham chiếu. Giá tham chiếu là giá thanh toán cuối ngày của phiên liền trước.</p>
+  <h4>Cách tính giá trần và giá sàn</h4>
+  <p>Giá trần bằng giá tham chiếu nhân 107%. Giá sàn bằng giá tham chiếu nhân 93%.</p>
+
+  <h3>Giới hạn vị thế nắm giữ</h3>
+  <p>Giới hạn vị thế khác nhau theo loại nhà đầu tư:</p>
+  <ul class="ds">
+    <li>Nhà đầu tư cá nhân: tối đa 5.000 hợp đồng.</li>
+    <li>Nhà đầu tư tổ chức: tối đa 10.000 hợp đồng.</li>
+    <li>Nhà đầu tư chuyên nghiệp: tối đa 20.000 hợp đồng.</li>
+  </ul>
+
+  <h2>Ký quỹ và thanh toán lãi lỗ hằng ngày</h2>
+  <h3>Quy định về ký quỹ</h3>
+  <p>Khi mở vị thế, nhà đầu tư phải nộp tài sản ký quỹ. Mức ký quỹ do Tổng Công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC) quy định. Công ty chứng khoán có thể áp dụng mức yêu cầu cao hơn. Tỷ lệ này có thể thay đổi theo từng thời kỳ.</p>
+
+  <h3>Thanh toán lãi lỗ hằng ngày</h3>
+  <p>Vị thế được đánh giá theo giá thanh toán cuối ngày. Lãi hoặc lỗ được ghi nhận vào tài khoản mỗi ngày. Cơ chế này khiến giá trị tài sản ký quỹ thay đổi liên tục.</p>
+  <h4>Yêu cầu nộp bổ sung ký quỹ</h4>
+  <p>Khi tài sản ký quỹ giảm xuống dưới mức yêu cầu, nhà đầu tư có thể phải nộp thêm trong thời hạn quy định. Nếu không đáp ứng, công ty chứng khoán có quyền xử lý vị thế theo hợp đồng đã ký.</p>
+
+  <h2>Đáo hạn và thanh toán cuối cùng</h2>
+  <h3>Tháng đáo hạn</h3>
+  <p>Tại mỗi thời điểm, thị trường niêm yết hợp đồng của bốn tháng đáo hạn. Đó là hai tháng liên tiếp gần nhất và hai tháng cuối quý tiếp theo.</p>
+
+  <h3>Ngày giao dịch cuối cùng</h3>
+  <p>Ngày giao dịch cuối cùng là thứ Năm của tuần thứ ba trong tháng đáo hạn. Nếu trùng ngày nghỉ, ngày này lùi về ngày giao dịch liền trước. Ngày thanh toán cuối cùng là ngày làm việc kế tiếp.</p>
+
+  <h3>Giá thanh toán cuối cùng</h3>
+  <p>Giá thanh toán cuối cùng được xác định từ chỉ số VN30 trong 30 phút cuối của ngày giao dịch cuối cùng. Khoảng thời gian này gồm 15 phút khớp lệnh liên tục và 15 phút khớp lệnh định kỳ đóng cửa. Hệ thống loại trừ một số giá trị cao nhất và thấp nhất trước khi tính.</p>
+
+  <h2>Lưu ý khi tìm hiểu quy định</h2>
+  <h3>Quy định có thể thay đổi</h3>
+  <p>Các cơ quan quản lý có thể sửa đổi quy định theo thời gian. Nhà đầu tư nên tham khảo văn bản mới nhất của HNX, VSDC và công ty chứng khoán nơi mở tài khoản.</p>
+
+  <h3>Đặc điểm đòn bẩy</h3>
+  <p>Ký quỹ cho phép giao dịch giá trị hợp đồng lớn hơn số vốn bỏ ra. Đòn bẩy làm khoản lãi và khoản lỗ đều thay đổi nhanh hơn. Khoản lỗ có thể vượt số tiền ký quỹ ban đầu.</p>
+
+  <div class="luu-y" role="note">
+    <p><strong>Lưu ý:</strong> Bài viết chỉ nhằm cung cấp thông tin, không phải lời khuyên đầu tư hay khuyến nghị mua bán. Số liệu có thể thay đổi theo quy định mới. Hãy đối chiếu với nguồn chính thức trước khi ra quyết định.</p>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="khung">
+    <div>© 2026 Hưng Thịnh VN30F. Giao dịch phái sinh tiềm ẩn rủi ro cao.</div>
+    <div><a href="index.html">Trang chủ</a> · <a href="gioi-thieu.html">Giới thiệu</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
