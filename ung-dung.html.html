@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hưng Thịnh VN30F – Mở tài khoản phái sinh VN30</title>
+<meta name="description" content="Ứng dụng kết nối với Hưng Thịnh giúp mở tài khoản giao dịch chứng khoán phái sinh – hợp đồng tương lai chỉ số VN30 ngay trên điện thoại.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF;--surface:#FFFFFF;--tint:#F6F1FC;--ink:#000000;--muted:#333333;--line:#E2D8F2;
+  --accent:#7635c4;--accent-ink:#FFFFFF;--up:#0E9F6E;--down:#D6333A;
+  --hero:#FFFFFF;--hero-ink:#000000;--hero-muted:#333333;--hero-accent:#7635c4;
+  --warn-bg:#F6F1FC;--warn-ink:#000000;--warn-line:#CDB5EC;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+h1,h2,h3{line-height:1.2;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0}
+.btn{display:inline-block;padding:14px 24px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--accent);color:var(--accent-ink);border:2px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+
+/* Hero */
+.hero{background:var(--hero);color:var(--hero-ink);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font-weight:800;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:30px;height:30px;border-radius:8px;background:var(--hero-accent);display:grid;place-items:center;color:#fff;font-style:normal;font-weight:800;font-size:.8rem}
+.nav a.link{color:var(--hero-muted);text-decoration:none;font-size:.95rem}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:36px 0 72px}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.5rem);font-weight:800}
+.hero .lead{margin:20px 0 28px;color:var(--hero-muted);max-width:34em;font-size:1.1rem}
+.hero .btn.ghost{color:var(--accent)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.disclaimer-chip{margin-top:26px;font-size:.9rem;color:var(--hero-muted);border-left:3px solid var(--hero-accent);padding-left:14px;max-width:34em}
+
+/* Phone */
+.phone{width:min(300px,100%);margin-inline:auto;background:#1E0F38;border:2px solid #4B2A85;border-radius:36px;padding:18px 16px 20px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.phone .top{display:flex;justify-content:space-between;align-items:baseline;font-size:.85rem;color:#A9B8D3}
+.phone .name{font-weight:600;color:#fff;font-size:1rem}
+.price{font-size:2rem;font-weight:800;color:#fff;margin-top:10px;line-height:1.1}
+.chg{color:#35D39B;font-weight:600;font-size:.9rem}
+.chart{width:100%;height:auto;margin:10px 0 6px;display:block}
+.chart .grid{stroke:#3A2362;stroke-width:1}
+.chart .line{fill:none;stroke:#B48AF0;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:700;stroke-dashoffset:700;animation:draw 2.2s ease-out .3s forwards}
+.chart .area{fill:url(#g);opacity:0;animation:fade .8s ease-out 2.2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+.ticket{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.ticket span{padding:12px 0;border-radius:10px;text-align:center;font-weight:600;color:#fff;font-size:.95rem}
+.long{background:#0E9F6E}.short{background:#E5484D}
+.phone small{display:block;text-align:center;margin-top:12px;color:#7F90B3;font-size:.75rem}
+
+/* Notice */
+.notice{background:var(--warn-bg);color:var(--warn-ink);border-block:1px solid var(--warn-line);padding:18px 0;font-size:.98rem}
+.notice strong{font-weight:600}
+
+section.s{padding:72px 0}
+.intro{max-width:44em;margin-top:14px;color:var(--muted)}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.feat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.feat p{color:var(--muted);margin-top:8px;font-size:.98rem}
+
+/* Steps */
+.steps{list-style:none;margin:36px 0 0;padding:0;counter-reset:s;display:grid;gap:0;max-width:760px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:18px;padding-bottom:28px;position:relative}
+.steps li::before{content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:800;z-index:1}
+.steps li::after{content:"";position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps p{color:var(--muted);margin-top:4px;font-size:.98rem}
+
+.alt{background:var(--tint);border-block:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.facts{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.facts li{padding:16px 18px;border-left:4px solid var(--accent);background:var(--tint);border-radius:0 10px 10px 0}
+.facts b{display:block;font-weight:600}
+.facts span{color:var(--muted);font-size:.96rem}
+
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted);max-width:46em}
+.faq{max-width:760px;margin-top:28px}
+
+.risk{border:2px solid var(--down);border-radius:14px;padding:24px;margin-top:0}
+.risk h3{color:var(--down);margin-bottom:8px}
+.risk p{color:var(--muted);font-size:.98rem}
+
+.final{text-align:center}
+.final p{margin:14px auto 26px;color:var(--muted);max-width:34em}
+footer{padding:30px 0 40px;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line)}
+footer p+p{margin-top:8px}
+
+@media (max-width:860px){
+  .hero-grid,.two{grid-template-columns:1fr;gap:36px}
+  .feats{grid-template-columns:1fr}
+  section.s{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .chart .line{animation:none;stroke-dashoffset:0}
+  .chart .area{animation:none;opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Chính">
+      <a class="brand" href="#"><i>VN</i>Hưng Thịnh VN30F</a>
+      <a class="link" href="#cac-buoc">Cách mở tài khoản</a>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <h1>Mở tài khoản phái sinh VN30 ngay trên điện thoại</h1>
+        <p class="lead">Hưng Thịnh VN30F là ứng dụng kết nối với Hưng Thịnh, giúp bạn gửi hồ sơ mở tài khoản giao dịch hợp đồng tương lai chỉ số VN30 mà không cần đến quầy.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://hungthinhvn30f.github.io/" target="_blank" rel="noopener">Mở tài khoản</a>
+          <a class="btn ghost" href="#cac-buoc">Xem các bước</a>
+        </div>
+        <p class="disclaimer-chip">Đây là ứng dụng kết nối với Hưng Thịnh, không phải ứng dụng chính thức của Hưng Thịnh.</p>
+      </div>
+      <div aria-hidden="true">
+        <div class="phone">
+          <div class="top"><span class="name">VN30F</span><span>Minh họa</span></div>
+          <div class="price">1.842,5</div>
+          <div class="chg">▲ +12,3 (+0,67%)</div>
+          <svg class="chart" viewBox="0 0 260 120" preserveAspectRatio="none">
+            <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B48AF0" stop-opacity=".4"/><stop offset="1" stop-color="#B48AF0" stop-opacity="0"/></linearGradient></defs>
+            <line class="grid" x1="0" y1="30" x2="260" y2="30"/><line class="grid" x1="0" y1="60" x2="260" y2="60"/><line class="grid" x1="0" y1="90" x2="260" y2="90"/>
+            <path class="area" d="M0 88 L20 80 L40 92 L62 70 L84 76 L106 52 L128 60 L150 40 L172 54 L194 34 L216 42 L238 22 L260 28 L260 120 L0 120Z"/>
+            <path class="line" d="M0 88 L20 80 L40 92 L62 70 L84 76 L106 52 L128 60 L150 40 L172 54 L194 34 L216 42 L238 22 L260 28"/>
+          </svg>
+          <div class="ticket"><span class="long">Mua (Long)</span><span class="short">Bán (Short)</span></div>
+          <small>Hình minh họa, không phải dữ liệu thực</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="notice" role="note">
+  <div class="wrap"><strong>Lưu ý quan trọng:</strong> Hưng Thịnh VN30F là ứng dụng của đơn vị kết nối, không thuộc sở hữu của Hưng Thịnh. Tài khoản chứng khoán của bạn được mở và quản lý tại Hưng Thịnh; ứng dụng chỉ hỗ trợ gửi hồ sơ và kết nối.</div>
+</div>
+
+<section class="s">
+  <div class="wrap">
+    <h2>Ứng dụng giúp bạn làm gì?</h2>
+    <p class="intro">Thay vì tự tìm hiểu thủ tục và chuẩn bị giấy tờ, bạn làm toàn bộ phần đăng ký ngay trong một ứng dụng.</p>
+    <div class="feats">
+      <div class="feat"><h3>Đăng ký từ xa</h3><p>Điền thông tin, chụp giấy tờ và gửi hồ sơ mở tài khoản phái sinh bằng điện thoại, ở bất cứ đâu.</p></div>
+      <div class="feat"><h3>Kết nối trực tiếp với Hưng Thịnh</h3><p>Hồ sơ của bạn được chuyển đến Hưng Thịnh để xử lý. Tài khoản đứng tên bạn và do Hưng Thịnh quản lý.</p></div>
+      <div class="feat"><h3>Theo dõi tiến trình</h3><p>Biết hồ sơ đang ở bước nào và cần bổ sung gì, không phải gọi hỏi nhiều lần.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="cac-buoc">
+  <div class="wrap">
+    <h2>Mở tài khoản trong 5 bước</h2>
+    <p class="intro">Quy trình cụ thể có thể thay đổi theo quy định của Hưng Thịnh tại từng thời điểm.</p>
+    <ol class="steps">
+      <li><div><h3>Tải ứng dụng và đăng ký</h3><p>Tạo tài khoản ứng dụng bằng số điện thoại và email của bạn.</p></div></li>
+      <li><div><h3>Xác thực danh tính</h3><p>Chụp căn cước công dân và quét khuôn mặt để xác minh bạn là chủ hồ sơ.</p></div></li>
+      <li><div><h3>Điền thông tin và chọn dịch vụ</h3><p>Cung cấp thông tin cá nhân, tài khoản ngân hàng và chọn mở tài khoản giao dịch phái sinh.</p></div></li>
+      <li><div><h3>Ký hợp đồng điện tử</h3><p>Đọc kỹ điều khoản và ký xác nhận ngay trên điện thoại.</p></div></li>
+      <li><div><h3>Nhận tài khoản và nạp ký quỹ</h3><p>Sau khi Hưng Thịnh duyệt hồ sơ, bạn nhận thông tin đăng nhập, nạp tiền ký quỹ và bắt đầu giao dịch.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap two">
+    <div>
+      <h2>Hợp đồng tương lai VN30 là gì?</h2>
+      <p class="intro">Đây là công cụ phái sinh cho phép bạn giao dịch dựa trên biến động của chỉ số VN30, nhóm 30 cổ phiếu lớn và thanh khoản cao trên thị trường chứng khoán Việt Nam.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Hai chiều giao dịch</b><span>Có thể mua (Long) khi kỳ vọng chỉ số tăng, hoặc bán (Short) khi kỳ vọng chỉ số giảm.</span></li>
+      <li><b>Giao dịch bằng ký quỹ</b><span>Bạn chỉ cần nộp một phần giá trị hợp đồng làm ký quỹ, nên lãi và lỗ đều được khuếch đại.</span></li>
+      <li><b>Có ngày đáo hạn</b><span>Mỗi hợp đồng có thời hạn nhất định và được thanh toán theo quy định của sàn giao dịch.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="s alt">
+  <div class="wrap">
+    <h2>Câu hỏi thường gặp</h2>
+    <div class="faq">
+      <details><summary>Ứng dụng này có phải của Hưng Thịnh không?</summary><p>Không. Hưng Thịnh VN30F là ứng dụng kết nối với Hưng Thịnh. Tài khoản chứng khoán được mở tại Hưng Thịnh, còn ứng dụng hỗ trợ bạn gửi hồ sơ.</p></details>
+      <details><summary>Tôi cần chuẩn bị gì để mở tài khoản?</summary><p>Thông thường bạn cần căn cước công dân còn hiệu lực, số điện thoại, email và một tài khoản ngân hàng đứng tên bạn. Danh sách chính xác theo yêu cầu của Hưng Thịnh.</p></details>
+      <details><summary>Đã có tài khoản chứng khoán cơ sở thì có mở được phái sinh không?</summary><p>Tùy quy định của Hưng Thịnh. Ứng dụng sẽ hướng dẫn bạn bước phù hợp với tình trạng tài khoản hiện tại.</p></details>
+      <details><summary>Phí và mức ký quỹ là bao nhiêu?</summary><p>Phí giao dịch và ký quỹ do Hưng Thịnh và sở giao dịch quy định, có thể thay đổi theo thời gian. Hãy xác nhận biểu phí mới nhất với Hưng Thịnh trước khi giao dịch.</p></details>
+      <details><summary>Thông tin cá nhân của tôi có an toàn không?</summary><p>Thông tin chỉ được dùng cho mục đích mở tài khoản và chuyển đến Hưng Thịnh để xử lý. Bạn nên đọc chính sách bảo mật trong ứng dụng trước khi đăng ký.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap">
+    <div class="risk" role="note">
+      <h3>Cảnh báo rủi ro</h3>
+      <p>Giao dịch chứng khoán phái sinh sử dụng đòn bẩy và có rủi ro cao. Bạn có thể mất toàn bộ vốn ký quỹ, thậm chí phải nộp thêm tiền. Chỉ giao dịch bằng số vốn bạn có thể chấp nhận mất, và hãy tìm hiểu kỹ trước khi tham gia. Nội dung trang này không phải lời khuyên đầu tư.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s alt final" id="tai-ung-dung">
+  <div class="wrap">
+    <h2>Sẵn sàng mở tài khoản?</h2>
+    <p>Gửi hồ sơ mở tài khoản phái sinh VN30 qua Hưng Thịnh VN30F chỉ trong vài phút.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn" href="https://hungthinhvn30f.github.io/" target="_blank" rel="noopener">Mở tài khoản ngay</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Hưng Thịnh VN30F. Ứng dụng kết nối với Hưng Thịnh, không phải ứng dụng chính thức của Hưng Thịnh.</p>
+    <p>Tên và thương hiệu Hưng Thịnh thuộc về chủ sở hữu tương ứng. Đầu tư chứng khoán phái sinh có rủi ro cao.</p>
+  </div>
+</footer>
+
+</body>
+</html>
